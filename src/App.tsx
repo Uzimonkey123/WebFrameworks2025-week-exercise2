@@ -1,10 +1,11 @@
 import './App.css'
+import CourseList from './CourseList'
 
-function App() {
+function App(props: {courses: any[]}) {
 
   return (
     <>
-      <div>Week exercise 2 - Read README.md for instructions</div>
+      <CourseList courses={props.courses}/>
     </>
   )
 }
